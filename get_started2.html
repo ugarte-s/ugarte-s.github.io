@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get Started</title>
+        <link rel="stylesheet" href="get_started2.css">
+    </head>
+    <body>
+        <!-- Overlay Menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="why_cf.html">WELCOME</a>
+                <a href="group_fitness.html">GROUP FITNESS</a>
+                <a href="lifestyle_analysis.html">ABOUT YOU</a>
+                <a href="#">OUR FITNESS PRODUCTS</a>
+                <a href="get_started1.html">GET STARTED</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <!-- Title -->
+        <h2 style="text-align:center">CUSTOMIZE YOUR PLAN</h2>
+
+        <!-- Grid -->
+        <div class="container">
+            <div class="bg2" onclick="addmcp12()" id="mcp12">
+                <p>Lifestyle: 12 month contract</p>
+            </div>
+            <div class="bg2" onclick="addmcp4()" id="mcp4">
+                <p>Premier: 4 month contract</p>
+            </div>
+            <div class="bg2" onclick="addmcp0()" id="mcp0">
+                <p>Flexi contract</p>
+            </div>
+            <div class="bg1" onclick="addpaycc()" id="paycc">
+                <p>Credit Card</p>
+            </div>
+            <div class="bg1" onclick="addpayls()" id="payls">
+                <p>Lumpsum</p>
+            </div>
+            <div class="bg1" onclick="addpaydd()" id="paydd">
+                <p>Direct Debit</p>
+            </div>
+            <div class="bg1" onclick="addpaycash()" id="paycash">
+                <p>Cash</p>
+            </div>
+            <div class="bg3">
+                <h3>SUMMARY</h3>
+                <ul id="listfinal"></ul>
+                <br>
+                <div id="listtotal"></div>
+                <br>
+                <div>
+                    <button onclick="saveto()">PROCEED</button></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="get_started2.js" charset="utf-8"></script>
+    </body>
+</html>

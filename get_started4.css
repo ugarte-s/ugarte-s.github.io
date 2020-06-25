@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------- */
+/* Typeface */
+@font-face {
+    font-family: 'Cera Stencil Bold';
+    src: url('fonts/CeraStencilBold.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova A Bold';
+    src: url('fonts/ProximaNovaACondensedBold.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova A Light';
+    src: url('fonts/ProximaNovaACondensedLight.otf');
+}
+
+body {
+    background: #55008C;
+    color: #fff;
+
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+    font-family: 'Cera Stencil Bold';
+}
+
+h2 span {
+    font-size: 30px;
+    font-family: 'Cera Stencil Bold';
+}
+
+p {
+    font-family: 'Proxima Nova A Light';
+    font-size: 1.5em;
+    margin-top: 96px;
+}
+
+li {
+    font-family: 'Proxima Nova A Light';
+    font-size: 1.1em;
+}
+
+.subtotal > ul > li > span {
+    font-family: 'Cera Stencil Bold';
+}
+
+/* ------------------------------------- */
+/* Overlay Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,3,99, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    font-family: 'Cera Stencil Bold';
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #C8C8C8;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+  }
+}
+
+/* ------------------------------------- */
+/* Price summary */
+#listfinal,
+#listtotal,
+#listpaytoday,
+#listpaytoday2 {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: auto;
+    width: 60%;
+}
+
+#listfinal,
+#listtotal, {
+    margin-top: 64px;
+}
+
+#listfinal > li,
+#listpaytoday > li {
+    font-size: 1.5em;
+    display: flex;
+    padding: 4px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listtotal > li,
+#listpaytoday2 > li {
+    padding: 12px 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: 2px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255,3,99);
+}

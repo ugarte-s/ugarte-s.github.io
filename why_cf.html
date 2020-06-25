@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome</title>
+        <link rel="stylesheet" href="why_cf.css">
+    </head>
+    <body>
+        <!-- Overlay Menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="why_cf.html">WELCOME</a>
+                <a href="group_fitness.html">GROUP FITNESS</a>
+                <a href="lifestyle_analysis.html">ABOUT YOU</a>
+                <a href="#">OUR FITNESS PRODUCTS</a>
+                <a href="get_started1.html">GET STARTED</a>
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <div id="videoModal">
+            <a class="closebtn" onclick="closeVideo()" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/OOpzLahpr94"></iframe>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <!-- Title -->
+        <h2 style="text-align:center">WELCOME TO CELEBRITY FITNESS</h2>
+
+        <!-- Grid -->
+        <div class="container">
+            <div class="imagebox" onclick="openVideo()">
+                <img src="images/welcome/welcome.jpg" style="width:100%">
+            </div>
+            <div class="imagebox" onclick="gotoMap()">
+                <img src="images/welcome/club_loc.jpg" style="width:100%">
+            </div>
+            <div class="imagebox">
+                <p>Box 3</p>
+            </div>
+            <div class="imagebox" onclick="gotoGallery()">
+                <img src="images/welcome/club_gallery.jpg" style="width:100%">
+            </div>
+            <div class="textbox" onclick="openVideo()">
+                <p>WELCOME</p>
+            </div>
+            <div class="textbox" onclick="gotoMap()">
+                <p>OUR CLUBS</p>
+            </div>
+            <div class="textbox">
+                <p>WHY CELEBRITY FITNESS</p>
+            </div>
+            <div class="textbox" onclick="gotoGallery()">
+                <p>CLUB GALLERY</p>
+            </div>
+        </div>
+
+        <script src="why_cf.js" charset="utf-8"></script>
+    </body>
+</html>

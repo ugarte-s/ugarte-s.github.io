@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get Started</title>
+        <link rel="stylesheet" href="get_started3.css">
+    </head>
+    <body>
+        <!-- Overlay Menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="why_cf.html">WELCOME</a>
+                <a href="group_fitness.html">GROUP FITNESS</a>
+                <a href="lifestyle_analysis.html">ABOUT YOU</a>
+                <a href="#">OUR FITNESS PRODUCTS</a>
+                <a href="get_started1.html">GET STARTED</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <!-- Title -->
+        <h2 style="text-align:center">CUSTOMIZE YOUR PLAN</h2>
+
+        <!-- Grid -->
+        <div class="container">
+            <div class="bg2" onclick="addFIT3()" id="fit3">
+                <p>FIT3</p>
+            </div>
+            <div class="bg2" onclick="addFIT6()" id="fit6">
+                <p>FIT6</p>
+            </div>
+            <div class="bg1" onclick="addPT1()" id="pt1">
+                <p>PT 1 month - 8 sessions</p>
+            </div>
+            <div class="bg1" onclick="addPT2()" id="pt2">
+                <p>PT 2 month - 16 sessions</p>
+            </div>
+            <div class="bg1" onclick="addPT3()" id="pt3">
+                <p>PT 3 month - 24 sessions</p>
+            </div>
+            <div class="bg1" onclick="addPT4()" id="pt4">
+                <p>PT 4 month - 32 sessions</p>
+            </div>
+            <div class="bg1" onclick="addPT5()" id="pt5">
+                <p>PT 5 month - 40 sessions</p>
+            </div>
+            <div class="bg3">
+                <h3>SUMMARY</h3>
+                <ul id="listfinal"></ul>
+                <br>
+                <div id="listtotal"></div>
+                <br>
+                <div id="listPOS"></div>
+                <br>
+                <div>
+                    <button onclick="saveto()">PROCEED</button></a>
+                </div>
+            </div>
+            <div>
+                <p class="titleTile">INDUCTION PACKAGES</p>
+            </div>
+            <div>
+                <p class="titleTile">PERSONAL TRAINING PACKAGES</p>
+            </div>
+        </div>
+
+        <script src="get_started3.js" charset="utf-8"></script>
+    </body>
+</html>

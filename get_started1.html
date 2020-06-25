@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get Started</title>
+        <link rel="stylesheet" href="get_started1.css">
+    </head>
+    <body>
+        <!-- Overlay Menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="why_cf.html">WELCOME</a>
+                <a href="group_fitness.html">GROUP FITNESS</a>
+                <a href="lifestyle_analysis.html">ABOUT YOU</a>
+                <a href="#">OUR FITNESS PRODUCTS</a>
+                <a href="get_started1.html">GET STARTED</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <!-- Title -->
+        <h2 style="text-align:center">CUSTOMIZE YOUR PLAN</h2>
+
+        <!-- Grid -->
+        <div class="container">
+            <div class="bg1">
+                <p>Base Membership</p>
+            </div>
+            <div class="bg2" onclick="addGF1()" id="gf1">
+                <p>Cycling Classes</p>
+            </div>
+            <div class="bg2" onclick="addGF2()" id="gf2">
+                <p>HIIT Classes</p>
+            </div>
+            <div class="bg2" onclick="addGF3()" id="gf3">
+                <p>Mind & Body Classes</p>
+            </div>
+            <div class="bg2" onclick="addGF4()" id="gf4">
+                <p>All Group Fitness Classes</p>
+            </div>
+            <div class="bg1" onclick="addAxs1()" id="axs1">
+                <p>Dual All Indo</p>
+            </div>
+            <div class="bg1" onclick="addAxs2()" id="axs2">
+                <p>Dual Jakarta</p>
+            </div>
+            <div class="bg1" onclick="addAxs3()" id="axs3">
+                <p>Dual East Jakarta</p>
+            </div>
+            <div class="bg1" onclick="addAxs4()" id="axs4">
+                <p>Merah Putih</p>
+            </div>
+            <div class="bg3">
+                <h3>SUMMARY</h3>
+                <ul id="listfinal"></ul>
+                <br>
+                <div id="listtotal"></div>
+                <br>
+                <div>
+                    <button onclick="saveto()">PROCEED</button></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="get_started1.js" charset="utf-8"></script>
+    </body>
+</html>

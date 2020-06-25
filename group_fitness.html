@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Group Fitness</title>
+        <link rel="stylesheet" href="group_fitness.css">
+    </head>
+    <body>
+        <!-- Overlay Menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="why_cf.html">WELCOME</a>
+                <a href="group_fitness.html">GROUP FITNESS</a>
+                <a href="lifestyle_analysis.html">ABOUT YOU</a>
+                <a href="#">OUR FITNESS PRODUCTS</a>
+                <a href="get_started1.html">GET STARTED</a>
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(0)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/483fieQvWRU"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(1)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/qfg20JFMVXQ"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(2)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/bVNAM6NCyA4"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(3)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/E7fL8gp30U0"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(4)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/y_oRV2Yje6A"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(5)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/ugfD8pj7Ajs"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(6)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/I3dAYbtubwE"></iframe>
+            </div>
+        </div>
+        <div class="videoModal">
+            <a class="closebtn" onclick="closeVideo(7)" id="closeBtnVideo">&times;</a>
+            <br>
+            <div class="modalContent">
+                <br>
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/bVNAM6NCyA4"></iframe>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <!-- Title -->
+        <h2 style="text-align:center">GROUP TRAINING & FITNESS CLASSES</h2>
+
+        <!-- Grid 1 -->
+        <div class="container">
+            <div class="imagebox" onclick="openVideo(0)">
+                <img src="images/gf_classes/strength_conditioning.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(1)">
+                <img src="images/gf_classes/cardio.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(2)">
+                <img src="images/gf_classes/dance.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(3)">
+                <img src="images/gf_classes/mind_body.png">
+            </div>
+            <div class="textbox" onclick="openVideo(0)">
+                <p>STRENGTH & CONDITIONING</p>
+            </div>
+            <div class="textbox" onclick="openVideo(1)">
+                <p>CARDIOVASCULAR</p>
+            </div>
+            <div class="textbox" onclick="openVideo(2)">
+                <p>DANCE</p>
+            </div>
+            <div class="textbox" onclick="openVideo(3)">
+                <p>MIND & BODY</p>
+            </div>
+        </div>
+        <br>
+
+        <!-- Grid 2 -->
+        <div class="container">
+            <div class="imagebox" onclick="openVideo(4)">
+                <img src="images/gf_classes/freestyle.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(5)">
+                <img src="images/gf_classes/boxing.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(6)">
+                <img src="images/gf_classes/cycling.png">
+            </div>
+            <div class="imagebox" onclick="openVideo(7)">
+                <img src="images/gf_classes/pool.png">
+            </div>
+            <div class="textbox" onclick="openVideo(4)">
+                <p>FREESTYLE</p>
+            </div>
+            <div class="textbox" onclick="openVideo(5)">
+                <p>BOXING & MARTIAL ARTS</p>
+            </div>
+            <div class="textbox" onclick="openVideo(6)">
+                <p>CYCLING</p>
+            </div>
+            <div class="textbox" onclick="openVideo(7)">
+                <p>SWIMMING POOL</p>
+            </div>
+        </div>
+
+        <script src="group_fitness.js" charset="utf-8"></script>
+    </body>
+</html>

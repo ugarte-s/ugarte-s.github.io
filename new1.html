@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GF Videos</title>
+		<style>
+			.videoModal {
+				position: fixed;
+				display: none;
+				z-index: 1;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				overflow: auto;
+				background-color: rgba(0,0,0,0.8);
+			}
+
+			.modalContent {
+				margin: 5% auto;
+				width: 800px;
+				height: 450px;
+			}
+
+			.videoModal .closebtn {
+			  position: absolute;
+			  text-decoration: none;
+			  color: #fff;
+			  top: 20px;
+			  right: 45px;
+			  font-size: 60px;
+			  cursor: pointer;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(0)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/I3dAYbtubwE"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(1)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/bVNAM6NCyA4"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(2)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/483fieQvWRU"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(3)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/E7fL8gp30U0"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(4)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/qfg20JFMVXQ"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(5)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/ugfD8pj7Ajs"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(6)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/y_oRV2Yje6A"></iframe>
+			</div>
+		</div>
+		
+		<div class="videoModal">
+			<a class="closebtn" onclick="closeVideo(7)" id="closeBtnVideo">&times;</a>
+			<br>
+			<div class="modalContent">
+				<br>
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/bVNAM6NCyA4"></iframe>
+			</div>
+		</div>
+		
+		<p onclick="openVideo(0)">Click here</p>
+		<p onclick="openVideo(1)">Click here</p>
+		<p onclick="openVideo(2)">Click here</p>
+		<p onclick="openVideo(3)">Click here</p>
+		<p onclick="openVideo(4)">Click here</p>
+		<p onclick="openVideo(5)">Click here</p>
+		<p onclick="openVideo(6)">Click here</p>
+		<p onclick="openVideo(7)">Click here</p>
+		
+		<script>
+			
+			function openVideo(n) {
+				var modal = document.getElementsByClassName('videoModal')[n];
+				modal.style.display = 'block';
+			}
+			function closeVideo(n) {
+				var modal = document.getElementsByClassName('videoModal')[n];
+				modal.style.display = 'none';
+			}
+		</script>
+	
+	</body>
+
+</html>
